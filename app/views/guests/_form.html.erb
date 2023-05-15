@@ -1,0 +1,31 @@
+<%= form_with(model: guest) do |f| %>
+  <% if guest.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% guest.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <li><%= f.label :name, '名前' %></li>
+  <%= f.text_field :name %>
+  
+  <li><%= f.label :address, '住所' %></li>
+  <%= f.text_field :address %>
+  
+  <li><%= f.label :email, 'メールアドレス' %></li>
+  <%= f.text_field :email %>
+  
+  <li><%= f.label :attend, '出席' %></li>
+  <%= f.text_field :attend %>
+  
+  <li><%= f.label :allergy, 'アレルギー' %></li>
+  <%= f.text_field :allergy %>
+  
+  <li><%= f.label :message, 'メッセージ' %></li>
+  <%= f.text_field :message %>
+
+  <li><%= f.submit '送信' %></li>
+<% end %>

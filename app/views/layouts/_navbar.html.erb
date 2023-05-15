@@ -1,0 +1,21 @@
+<header class="mb-4">
+  <nav class="navbar navbar-expand-sm navbar-light bg-info">
+    <div class="container-fluid ps-5 pe-5">
+      <a class="navbar-brand text-white" href="/">太郎＆花子</a>
+      <!-- 横幅が狭い時に出るハンバーガーボタン -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- メニュー項目 -->
+      <div class="collapse navbar-collapse justify-content-flex-start" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="col-md-6 offset-md-3 shadow-lg nav-item"><%= link_to  'our story', new_guest_path, class: 'btn btn-light nav-link' %></li>
+          <li class="col-md-6 offset-md-3 shadow-lg nav-item"><%= link_to  'wedding', new_guest_path, class: 'btn btn-light nav-link' %></li>
+          <li class="col-md-6 offset-md-3 shadow-lg nav-item"><%= link_to  'gallery', new_guest_path, class: 'btn btn-light nav-link' %></li>
+          <li class="col-md-6 offset-md-3 shadow-lg nav-item"><%= link_to  '参加確認', new_guest_path, class: 'btn btn-light nav-link' %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

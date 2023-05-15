@@ -1,0 +1,14 @@
+<h1>ご回答ありがとうございます。</h1>
+
+<ul>
+  <% @guests.each do |guest| %>
+    <li><%= guest.name %></li>
+    <li><%= guest.address %></li>
+    <li><%= guest.email %></li>
+    <li><%= guest.attend %></li>
+    <li><%= guest.allergy %></li>
+    <li><%= guest.message %></li>
+  <% end %>
+</ul>
+
+<%= link_to '参加確認', new_guest_path %>
